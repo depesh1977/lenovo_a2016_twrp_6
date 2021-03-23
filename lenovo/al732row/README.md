@@ -1,4 +1,4 @@
-TWRP device tree for ASUS Z00VD
+TWRP device tree for Lenovo A2016
 ==============
 
 This branch is for building TWRP 3.x.
@@ -20,15 +20,14 @@ This branch is for building TWRP 3.x.
   - Brightness
 
 ### Other resource:
-  - Kernel: 3.18.79
+  - Kernel: 3.18.19
 
 
 source build/envsetup.sh && lunch
 
 
 
-source build/envsetup.sh
-lunch 8
-make clean
-make recoveryimage -j4
+.build/envsetup.sh
+lunch
+make recoveryimage
 
